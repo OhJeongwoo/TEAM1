@@ -145,7 +145,7 @@ class PurePursuit:
                 _, _, done, logs = self.env.step([input_steering, input_vel])
 
                 if done:
-                    END_TIME = ime.time()
+                    END_TIME = time.time()
                     rt.id = data.id
                     rt.trial = data.trial
                     rt.team = data.name
